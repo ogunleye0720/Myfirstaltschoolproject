@@ -1,0 +1,807 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.507);
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.main-container{
+    position: relative;
+    background: linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./images/plain-black-background.jpg") center/cover no-repeat scroll;
+    width: auto;
+}
+/* ==============================
+          NAVBAR STYLES
+   ==============================*/
+nav{
+    height: 70px;
+    width: auto;
+    background-color: transparent;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.nav-elements{
+    width: 40%;
+    background-color: transparent;
+
+}
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-elements .list-container a{ 
+    color:  rgba(255, 255, 255, 0.651);
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-elements .list-container a:hover{
+    border-bottom: 2px rgb(243, 148, 32) solid;
+}
+.logo{
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h3 a{
+    color:  rgba(255, 255, 255, 0.918); 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* =================================
+      HEADER STYLES
+   =================================*/
+
+header{
+    height: auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background: linear-gradient(rgba(7, 4, 4, 0.889), rgba(7, 4, 5, 0.70)), url("./images/dami3.jpg") top/cover no-repeat fixed;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 15px 0px 15px;
+    padding: 10px 5px 10px 10px;
+}
+
+.header-container.introduction{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.introduction h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    align-self: flex-start;
+    justify-self: center;
+    margin-left: 5px;
+    color: rgba(243, 148, 32, 0.801) ;
+}
+
+.introduction h2{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    align-self: flex-start;
+    justify-self: center;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.introduction p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(248, 247, 196);
+    align-self: flex-start;
+    justify-self: center;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.stack h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    align-self: flex-start;
+    justify-self: center;
+    margin-left: 10px;
+    color: rgba(235, 120, 13, 0.801) ;
+}
+
+.stack-icons img{
+    margin: 20px 10px 20px 10px;
+}
+.stack-icons p a{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(243, 140, 43, 0.87)  ;
+    font-style: italic;
+    text-decoration: none;
+    margin-left: 10px ;
+
+}
+.stack-icons p a:hover{
+    border-bottom: 2px rgba(252, 213, 213, 0.692) solid;
+}
+/*  ===================================
+        EDUCATION SECTION STYLING
+    ===================================*/
+section{
+    height: auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background: linear-gradient(rgba(7, 4, 4, 0.789), rgba(7, 4, 5, 0.830)), url("./images/pexels-thorn-yang-168766.jpg") center/cover no-repeat fixed;
+}
+
+#head-education{
+    text-align: center;
+    margin: 0px 15px 0px 15px;
+    color: rgb(247, 229, 149);
+}
+.edu-section{
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px 15px 30px 15px;
+    padding: 5px 10px 10px 10px;
+}
+.edu-header img{
+    margin-bottom: 0;
+    margin-left: 48%;
+}
+.pry-edu{
+    width: 20%;
+    background-color:transparent ;
+}
+.pry-edu h2{
+    font-weight: 500;
+    color: rgba(247, 226, 196, 0.993);
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px rgba(243, 140, 43, 0.87) dotted;
+}
+.pry-edu h3{
+    font-weight: 500;
+    text-align: center;
+}
+
+.pry-edu p{
+    text-align: center;
+}
+
+.pry-edu p span{
+    color: rgba(245, 165, 16, 0.945);
+}
+
+.sec-edu{
+    width: 20%;
+}
+.sec-edu h2{
+    font-weight: 500;
+    color: rgba(247, 226, 196, 0.993);
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px rgba(243, 140, 43, 0.87) dotted;
+}
+.sec-edu h3{
+    font-weight: 500;
+    text-align: center;
+}
+
+.sec-edu p{
+    text-align: center;
+}
+
+.sec-edu p span{
+    color: rgba(245, 165, 16, 0.945);
+}
+
+.tert-edu{
+    width: 20%;
+}
+.tert-edu h2{
+    font-weight: 500;
+    color: rgba(247, 226, 196, 0.993);
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px rgba(243, 140, 43, 0.87) dotted;
+}
+.tert-edu h3{
+    font-weight: 500;
+    text-align: center;
+}
+
+.tert-edu p{
+    text-align: center;
+}
+
+.tert-edu p span{
+    color: rgba(245, 165, 16, 0.945);
+}
+
+/* ==================================
+        EXPERIENCE SECTION STLYING
+   ==================================*/
+
+article{
+    height: auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background: linear-gradient(rgba(7, 4, 4, 0.923), rgba(7, 4, 5, 0.940)), url("./images/mainbackground.jpg") center/cover no-repeat fixed;
+}
+#head-experience{
+    text-align: center;
+    color: rgba(248, 248, 248, 0.493);
+}
+.experience-section{
+    height:100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px 40px 30px 15px;
+    padding: 5px 10px 10px 10px;
+}
+.experience-container img{
+    margin-bottom: 0;
+    margin-left: 48%;
+}
+.sub-experience1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom:1px rgba(104, 104, 103, 0.678) dotted;
+}
+.sub-experience2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom:1px rgb(104, 104, 103, 0.678) dotted;
+}
+.sub-experience3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom:1px rgb(104, 104, 103, 0.678) dotted;
+}
+.sub-experience4{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.experience-section h2 span{
+    display: block;
+    text-align: start;
+    width: auto;
+    font-size: 20px;
+    color: rgb(245, 181, 102);
+}
+
+.sub-experience1 p{
+    font-weight: 500;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    color: rgba(250, 178, 95, 0.884);
+}
+.sub-experience1 p span{
+    font-style: oblique ;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.384);
+}
+
+.sub-experience2 p{
+    font-weight: 500;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgba(250, 178, 95, 0.884);
+}
+
+.sub-experience3 p{
+    font-weight: 500;
+    margin-left: 1px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color: rgba(250, 178, 95, 0.884);
+}
+
+.sub-experience4 p{
+    font-weight: 500;
+    margin-right: 70px;
+    margin-top: 20px;
+    color: rgba(250, 178, 95, 0.884);
+}
+/* ============================
+       HOBBIES CONTAINER
+   ============================*/
+
+.hobbies{
+    height: auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background: linear-gradient(rgba(7, 4, 4, 0.789), rgba(7, 4, 5, 0.830)), url("./images/pexels-garrett-morrow-2885014.jpg") bottom/cover no-repeat fixed;
+}
+.hobbies img{
+    margin-bottom: 0;
+    margin-left: 48%;
+}
+#head-hobbies{
+    text-align: center;
+    margin: 0px 15px 0px 15px;
+    color: rgba(250, 139, 75, 0.781);
+}
+
+.hobbies-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 10px 50px;
+}
+
+.hobbies-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 10px 50px;
+    padding-bottom: 20px;
+}
+/* ==============================
+         Footer styles
+   ==============================*/
+footer{
+    height: auto;
+}
+
+.footer-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 50px 0px 50px;
+}
+
+.footer-container a{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-container a #img-1{
+    height: 20%;
+    width: 60%;
+}
+.footer-container a #img-2{
+    height: 20%;
+    width: 60%;
+}
+.footer-container a #img-3{
+    height: 20%;
+    width: 60%;
+}
+.footer-container a #img-4{
+    height: 20%;
+    width: 60%;
+}
+.footer-container a #img-5{
+    height: 20%;
+    width: 60%;
+}
+.footer-container  #img-1:hover{
+    height: 25%;
+    width: 80%;
+}
+.footer-container  #img-2:hover{
+    height: 25%;
+    width: 80%;
+}
+.footer-container  #img-3:hover{
+    height: 25%;
+    width: 80%;
+}
+.footer-container #img-4:hover{
+    height: 25%;
+    width: 80%;
+}
+.footer-container #img-5:hover{
+    height: 25%;
+    width: 80%;
+}
+
+/* ===================================
+    LOGIN PAGE STYLES
+   ==================================*/
+
+.login-body{
+    position: relative;
+    background:linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./images/plain-black-background.jpg") center/cover no-repeat scroll;
+    width: auto;
+    height:auto;
+}
+.login-header{
+    height:auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background:linear-gradient(rgba(7, 4, 4, 0.889), rgba(7, 4, 5, 0.70)), url("./images/pexels-maksim-goncharenok-5821028.jpg") center/cover no-repeat fixed;
+}
+
+ .form-class{
+     height: 500px;
+     width:40%;
+     background-color: transparent;
+     margin: 30px 10% 20px 20%;
+     padding: 5px 5px 5px 5px;
+ }
+
+ form{
+     display: flex;
+     flex-direction: column;
+     margin-top: 100px;
+ }
+
+ input{
+     margin: 10px 30px 10px 50px;
+     padding: 5px 10px 5px 10px;
+     width: 70%;
+     height: 40%;
+     background-color: transparent;
+ }
+
+.input-style{
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px rgb(134, 132, 132) ridge;
+}
+
+#submit-button{
+    font-size: 80%;
+    color: #fff;
+    background-color:  rgb(92, 3, 77);
+    border-radius: 5px;
+    border: 1px rgba(29, 28, 28, 0) solid;
+    width: 25%;
+    margin-left: 190px;
+}
+#submit-button:hover{
+    cursor: pointer;
+    width:20%;
+    background-color: rgb(190, 12, 161);
+    border-radius: 10px;
+}
+
+#need-help{
+    color: rgba(255, 255, 255, 0.877);
+    margin-left: 70%;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#need-help:hover{
+    color: rgba(241, 83, 83, 0.911);
+}
+
+#forgot-pass{
+    color: rgba(146, 175, 252, 0.918);
+    margin-top: 30px;
+    margin-left:10%;
+}
+.signup-now{
+    font-size: 80%;
+    color: #fff;
+    background-color: rgba(247, 155, 68, 0.582);
+    border-radius: 5px;
+    border: 1px rgba(29, 28, 28, 0) solid;
+    width: 30%;
+}
+
+.signup-now:hover{
+    cursor: pointer;
+    width:25%;
+    background-color:rgba(247, 155, 68, 0.664);
+    border-radius: 10px;
+}
+
+/* ===============================
+      REGISTRATION PAGE STYLING
+   ===============================*/
+
+.Registration-body{
+    position: relative;
+    background:linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./images/plain-black-background.jpg") center/cover no-repeat scroll;
+    width: auto;
+    height:auto;
+}
+.registration-header{
+    height:auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background:linear-gradient(rgba(7, 4, 4, 0.889), rgba(7, 4, 4, 0.889)), url("./images/pexels-fauxels-3183132.jpg") center/cover no-repeat fixed;
+}
+
+.reg-container{
+    color: black;
+    max-width: 700px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.966);
+    padding: 3% 1% 3% 1%;
+    margin-right:10%;
+    margin: 10% 5% 10% 0;
+    border: 1px #644a64 solid;
+    border-radius: 20px;
+}
+
+.Reg-title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 35%;
+    margin-bottom: -15%;
+    position: relative;
+    color: rgba(7, 6, 6, 0.918);
+}
+.reg-container .Reg-title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(135deg,#71b7e7,#9b599b);
+}
+.reg-container form .user-details{
+    display: block;
+    margin-top: -5px;
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
+
+.user-details .input-box input{
+    display: inline;
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    padding:5px 5px 5px 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+form .user-details .input-box{
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus, .user-details .input-box input:valid{
+    border-color: #9b599b;
+}
+
+#phone{
+    margin-left: 13%;
+}
+#email{
+    margin-left: 14%;
+}
+#pas-conf{
+    margin-left: 1%;
+}
+#country{
+    margin-left: 12%;
+}
+#state{
+    margin-left: 4%;
+}
+
+#sign-up{
+    font-size: 80%;
+    color: #fff;
+    background: linear-gradient(135deg,#33a4f0,#f83cf8);
+    border-radius: 5px;
+    border: 1px rgba(29, 28, 28, 0) solid;
+    width: 25%;
+    margin-left: 45%;
+}
+#sign-up:hover{
+    cursor: pointer;
+    width:20%;
+    background-color:(135,#9b599b,#71b7e7);
+    border-radius: 10px;
+}
+
+/*  ==================================================
+             Contact Page Styles
+    ==================================================*/
+
+.contact-body{
+    position: relative;
+    background:linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./images/plain-black-background.jpg") center/cover no-repeat scroll;
+    width: auto;
+    height:auto;
+}
+.contact-header{
+    height:auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background:linear-gradient(rgba(7, 4, 4, 0.889), rgba(7, 4, 4, 0.889)), url("./images/pexels-hitarth-jadhav-220357.jpg") center/cover no-repeat fixed;
+}
+
+#message-box{
+    height: 60px;
+    width: 30%;
+    margin-left: 30%;
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* =========================
+      CALCULATOR STYLING
+   =========================*/
+.calculator-body{
+    position: relative;
+    background:linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./images/plain-black-background.jpg") center/cover no-repeat scroll;
+    width: auto;
+    height:auto;
+}
+.Calculator-header{
+    height:auto;
+    width: auto;
+    border-bottom: 0.5px rgba(247, 250, 250, 0.055) ridge;
+    background:linear-gradient(rgba(7, 4, 4, 0.889), rgba(7, 4, 4, 0.889)), url("./images/pexels-daniel-putzer-633409.jpg") center/cover no-repeat fixed;
+}
+
+.calc-container{
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    width: 50%;
+    background: transparent;
+    padding: 3% 1% 3% 1%;
+    margin: right -17%;
+    margin-left: -18%;
+}
+
+.calc-container .calculator input[type = button]{
+    float: inline-start;
+    width: 10%;
+    height: 40px;
+    padding: 0;
+    margin-right: -12%;
+    margin-left: 18%;
+    background: rgb(136, 84, 7);
+    border: none;
+    font-size: 11px;
+    line-height: 10px;
+    border-radius: 30%;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.calc-container .calculator input:hover[type = button]{
+    background: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+#on{
+    background-color: rgb(7, 247, 67);
+}
+#on:hover{
+    background-color: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+
+#off{
+    background-color: rgb(245, 10, 10);
+}
+#off:hover{
+    background-color: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+#equals{
+    background-color: rgb(245, 65, 10);
+}
+#equals:hover{
+    background-color: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+#mrc{
+    background-color: rgba(245, 222, 10, 0.938);
+}
+#mrc:hover{
+    background-color: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+#clr{
+    background-color: rgb(245, 210, 10);
+}
+#clr:hover{
+    background-color: rgb(88, 13, 19);
+    width: 9%;
+    height: 38px;
+}
+
+.calc-container .calculator input[type = text]{
+    width:60%;
+    height: 10px;
+    padding:0 ;
+    margin: 0 25px;
+    box-sizing: border-box;
+    background:none;
+    border: none;
+    color: rgb(250, 28, 28);
+    font-size: 60px;
+    text-align: right;
+    line-height: 60px;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.calculator{
+    padding: 0px;
+    width: 50%;
+    background-color: #555353;
+    box-shadow: 0px 0px 0px 10px;
+    border: none;
+    font-size: 18px;
+    left: 2px;
+    top: 2px;;
+}
